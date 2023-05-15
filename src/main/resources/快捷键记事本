@@ -3,6 +3,7 @@ Ctrl + Shift + N 查找类
 Alt + 7 显示类中的方法
 Ctrl + H 查看当前接口的层次结构图(hierarchy), Ctrl+h快捷键可查看
 Ctrl + Alt + B 查看接口的实现类
+ Ctrl+Shift+f 快速进入全局查找页面，或者通过 Edit —> Find —>Find In Path
 
 向9999端口发送字符串nc -lk 9999 输入字符 https://blog.csdn.net/maxueke2017/article/details/124674081
 windows

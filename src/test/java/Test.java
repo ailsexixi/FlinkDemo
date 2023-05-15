@@ -24,5 +24,8 @@ public class Test {
         mapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
         TxEvent txEvent = mapper.readValue(jsonStr, TxEvent.class);
         System.out.println(txEvent);
+        System.out.println("select * from left_upsert as t1 left join right_upsert as t2" +
+                "on t1.id = t2.id" +
+                "AND t1.pt_time BETWEEN t2.pt_time   AND  BETWEEN t2.pt_time + INTERVAL '1' MINUTE");
     }
 }
